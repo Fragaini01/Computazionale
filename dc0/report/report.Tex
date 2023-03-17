@@ -1,0 +1,102 @@
+\documentclass[a4paper,11pt,rmp,superscriptaddress]{revtex4}
+\usepackage{latexsym} 
+\usepackage{helvet}
+\usepackage{times}
+\usepackage[applemac]{inputenc}
+\usepackage{setspace}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{ulem} 
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[margin=2cm]{geometry}
+\renewcommand{\baselinestretch}{1} 
+\bibliographystyle{authordate1}
+
+\begin{document}
+
+\title{Comparing Global Temperature Datasets: Evidence for a Significant Increase in Temperature in the Last 50 Years}
+\author{Francesco Ragaini}
+\begin{abstract}
+
+In the last centuries the global temperature has changed and many different survey have collected data about that.\\
+This report intends to compare data from five different observer and to test if the anomaly in the last fifty years can be considered as a statistical fluctuation
+
+To achive this goals has been collected datasets from Nasa, HadCRUT, Japan metereological office, Berkeley earth, Ncdc Noaa, 
+this datasets has been compared with a Kalmogorv-Smirnov test, than all of that has been split in data before and after 1975 and compered 
+again with KS test.
+
+The Kalmogorv-Smirnov test on the entire datasets has reported positive results (\ref*{fig:1}), conversely the K.S. test 
+on the split dataset has reported negative results.
+
+This result suggest that all the datasets analyzed describe the same effect and the distribution of the anomaly after the 1975 and 
+before 1975 have different distributions. Because of that results can be concluded that all survey registered the same effect
+and in the last fifty years the temperature as increased.
+\end{abstract}
+
+\maketitle
+\section*{Data analisis}
+All the surveys analyzed in this study have released their datasets on their respective websites (see bibliography).
+However, each dataset considers a different temperature as the zero point. Therefore, 
+the first step is to adjust the datasets by applying an offset to set the zero point at the same temperature. 
+Only after this correction, K.S. tests can be applied to the datasets.
+
+\section*{Data comparison}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{"/home/francesco/Codici/Computazionale/dc0/Sovrapposizione_Osservatori.png"}
+    \caption[short]{All the distributions are describing a similar phenomen. P value of the K.S. test (Table in figure) is bigger than 0.05, 
+    so the distributions can be superimposed.}
+    \label{fig:1}
+\end{figure}
+As shown in \ref*{fig:1}, all anomaly datasets exhibit a high degree of consistency with each other, 
+as evidenced by the K.S. p values reported in the table. 
+While the Japan Met. dataset appears to be the most different from the others, 
+its p value with respect to all the other datasets is still greater than 0.05. 
+Overall, these findings suggest a high level of agreement among the different surveys 
+regarding the measurement of global temperature anomalies.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\textwidth]{"/home/francesco/Codici/Computazionale/dc0/Pre&Post.png"}
+    \caption[short]{Anomalies before and after 1975 are not consistent, p value in K.S. test are a lot smaller than 0.05}
+    \label{fig:2}
+\end{figure}
+In \ref*{fig:2} is shown that all datasets agree that the distributions of anomalies before and after 1975 are not consistent, 
+as every p-value is under 0.05.
+
+
+\section*{Conclusions}
+Because of first set of K.S. test, (\ref*{fig:1}) is possibile to assert that different survey are misuring similar distributions,
+so can be concluded that all of that are misuring the same effect. Japan Met. data are the most different to the others, this could 
+appen because Japan Met. zero period was the most different 
+
+In second set of K.S. test, (\ref*{fig:2}) is shown that the anomalies in the last fifty years can't be considered as statistical fluctuation.
+Because of that could be interesting to search for a trend in the last fifty years of data.
+
+
+\section*{Bibliography}
+Nasa:\\
+\href{https://data.giss.nasa.gov/gistemp/graphs_v4/graph_data/Global_Mean_Estimates_based_on_Land_and_Ocean_Data/graph.txt}{Dataset}\\
+Base: 1951-1980\\
+
+HadCRUT:\\
+\href{https://www.metoffice.gov.uk/hadobs/hadcrut5/data/current/download.html} {Dataset}\\
+Base: 1961-1990\\
+
+Ncdc Noaa\\
+\href{https://www.ncdc.noaa.gov/cag/global/time-series/globe/land_ocean/12/12/1880-2023/data.csv}{Dataset} \\
+Base: 1901-2000\\
+
+Japan metereological office\\
+\href{https://ds.data.jma.go.jp/tcc/tcc/products/gwp/temp/list/csv/year_wld.csv}{Dataset} \\
+Base: 1991-2020\\
+
+Berkeley\\
+\href{https://ds.data.jma.go.jp/tcc/tcc/products/gwp/temp/list/csv/year_wld.csv}{Dataset} \\
+Base: 1951-1980\\
+
+\end{document}
