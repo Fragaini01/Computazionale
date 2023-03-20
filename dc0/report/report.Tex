@@ -22,26 +22,27 @@
 \author{Francesco Ragaini}
 \begin{abstract}
 
-In the last centuries the global temperature has changed and many different surveys have collected data about that.\\
-This report intends to compare data from five different observers and to test if the anomaly in the last fifty years can be considered as a statistical fluctuation
+On the last centuries the global temperature has changed and many different surveys have collected data about that.\\
+This report intends to compare data from five different observers and to test if the anomaly in the last fifty years 
+can be considered as a statistical fluctuation.
 
 To achive this goals has been collected datasets from Nasa, HadCRUT, Japan Metereological office, Berkeley earth, Ncdc Noaa, 
 this datasets has been compared with a Kalmogorv-Smirnov test, than all of that has been split in data before and after 1975 and compered 
 again with KS test.
 
-The Kalmogorv-Smirnov test on the entire datasets has reported positive results (\ref*{fig:1}), conversely the K.S. test 
-on the split dataset has reported negative results.
+The Kalmogorv-Smirnov test on the entire datasets has reported positive results (figure \ref*{fig:1}), conversely the K.S. test 
+on the split dataset has reported negative results (figure \ref*{fig:2}).
 
-This result suggest that all the datasets analyzed describe the same effect and the distribution of the anomaly after the 1975 and 
-before 1975 have different distributions. Because of that results can be concluded that all survey registered the same effect
+This result suggest that all the datasets analyzed describe the same effect and the timeseries of the anomalies after the 1975 and 
+before 1975 have different distributions. According to this results all surveys registered the same effect
 and in the last fifty years the temperature as increased.
 \end{abstract}
 
 \maketitle
-\section*{Data analisis}
+\section*{Data analysis}
 All the surveys analyzed in this study have released their datasets on their respective websites (see bibliography). 
-The datasets are organized as dataseries of annual anomalies: discrepancy of annual global temperature from a certain baseline, considered
- as zero point.
+The datasets are organized as dataseries of annual anomalies: discrepancy of annual global temperature from a certain baseline, 
+considered as zero point.
 However, each dataset considers a different temperature as the zero point. Therefore, 
 the first step is to adjust the datasets by applying an offset to set the zero point at the same temperature. 
 Only after this correction, Kalmogorv-Smirnov tests can be applied to the datasets.
@@ -50,7 +51,7 @@ Only after this correction, Kalmogorv-Smirnov tests can be applied to the datase
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{"/home/francesco/Codici/Computazionale/dc0/Sovrapposizione_Osservatori.png"}
-    \caption[short]{\textbf{All surveys's datasets are consistent with the others by K.S. test}. The plot rappresent normalized histogram with 
+    \caption[short]{\textbf{All surveys's datasets are consistent with the others by K.S. test.} The plot rappresent normalized histogram with 
     annual anomalies divided by survey. In the table are reported the p values.} 
     \label{fig:1}
 \end{figure}
@@ -64,12 +65,12 @@ regarding the measurement of global temperature anomalies.
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{"/home/francesco/Codici/Computazionale/dc0/Pre&Post.png"}
-    \caption[short]{\textbf{Anomalies before and after 1975 are not consistent}. Each plot is an histogram that 
-    rappresent anomalies distributions before and after 1975. In the table are reported the p values by K.S. tests}
+    \caption[short]{\textbf{Anomalies before and after 1975 are not consistent.} Each plot is an histogram that 
+    represent anomalies distributions before and after 1975. In the table are reported the p values by K.S. tests.}
     \label{fig:2}
 \end{figure}
-In figure \ref*{fig:2} is shown that all datasets agree that the distributions of anomalies before and after 1975 are not consistent, 
-as every p-value is under 0.05. 1975 has been chosen because plotted datasets seems to change trend in that year.
+Figure \ref*{fig:2} shows that all datseries before and after 1975 are not compatible by K.S. tests,
+as every p-value is under 0.05. The year 1975 has been chosen beacouse it shows a significant change in trend.
 
 
 \section*{Conclusions}
@@ -78,12 +79,12 @@ so can be concluded that all of that are misuring the same effect. Japan Met. da
 appen because Japan Met. zero period was the most different. 
 
 In the second claim, (fig \ref*{fig:2}) is shown that the anomalies in the last fifty years can't be considered as statistical fluctuation.
-Because of that could be interesting to search for a trend in the last fifty years of data.
+According to that result can be interesting to search for a trend in the last fifty years of data.
 
 \section*{Bibliography}
 
 
-\begin{tabular}{ c c c c c }
+\begin{tabular}{ c  c  c  c  c }
     Nasa    &   HadCRUT     &   Japan Metereological office     &   Ncdc Noaa   &   Berkeley \\
     \href{https://data.giss.nasa.gov/gistemp/graphs_v4/graph_data/Global_Mean_Estimates_based_on_Land_and_Ocean_Data/graph.txt}{Nasa dataset} & 
     \href{https://www.metoffice.gov.uk/hadobs/hadcrut5/data/current/download.html} {HadCRUT dataset} &
