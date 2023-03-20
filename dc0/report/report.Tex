@@ -22,10 +22,10 @@
 \author{Francesco Ragaini}
 \begin{abstract}
 
-In the last centuries the global temperature has changed and many different survey have collected data about that.\\
-This report intends to compare data from five different observer and to test if the anomaly in the last fifty years can be considered as a statistical fluctuation
+In the last centuries the global temperature has changed and many different surveys have collected data about that.\\
+This report intends to compare data from five different observers and to test if the anomaly in the last fifty years can be considered as a statistical fluctuation
 
-To achive this goals has been collected datasets from Nasa, HadCRUT, Japan metereological office, Berkeley earth, Ncdc Noaa, 
+To achive this goals has been collected datasets from Nasa, HadCRUT, Japan Metereological office, Berkeley earth, Ncdc Noaa, 
 this datasets has been compared with a Kalmogorv-Smirnov test, than all of that has been split in data before and after 1975 and compered 
 again with KS test.
 
@@ -39,64 +39,57 @@ and in the last fifty years the temperature as increased.
 
 \maketitle
 \section*{Data analisis}
-All the surveys analyzed in this study have released their datasets on their respective websites (see bibliography).
+All the surveys analyzed in this study have released their datasets on their respective websites (see bibliography). 
+The datasets are organized as dataseries of annual anomalies: discrepancy of annual global temperature from a certain baseline, considered
+ as zero point.
 However, each dataset considers a different temperature as the zero point. Therefore, 
 the first step is to adjust the datasets by applying an offset to set the zero point at the same temperature. 
-Only after this correction, K.S. tests can be applied to the datasets.
+Only after this correction, Kalmogorv-Smirnov tests can be applied to the datasets.
 
 \section*{Data comparison}
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{"/home/francesco/Codici/Computazionale/dc0/Sovrapposizione_Osservatori.png"}
-    \caption[short]{All the distributions are describing a similar phenomen. P value of the K.S. test (Table in figure) is bigger than 0.05, 
-    so the distributions can be superimposed.}
+    \caption[short]{\textbf{All surveys's datasets are consistent with the others by K.S. test}. The plot rappresent normalized histogram with 
+    annual anomalies divided by survey. In the table are reported the p values.} 
     \label{fig:1}
 \end{figure}
-As shown in \ref*{fig:1}, all anomaly datasets exhibit a high degree of consistency with each other, 
+As shown in figure \ref*{fig:1}, all anomaly datasets exhibit a high degree of consistency with each other, 
 as evidenced by the K.S. p values reported in the table. 
 While the Japan Met. dataset appears to be the most different from the others, 
-its p value with respect to all the other datasets is still greater than 0.05. 
+its p value respect to all the other datasets is still greater than 0.05. 
 Overall, these findings suggest a high level of agreement among the different surveys 
 regarding the measurement of global temperature anomalies.
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=1\textwidth]{"/home/francesco/Codici/Computazionale/dc0/Pre&Post.png"}
-    \caption[short]{Anomalies before and after 1975 are not consistent, p value in K.S. test are a lot smaller than 0.05}
+    \includegraphics[width=0.8\textwidth]{"/home/francesco/Codici/Computazionale/dc0/Pre&Post.png"}
+    \caption[short]{\textbf{Anomalies before and after 1975 are not consistent}. Each plot is an histogram that 
+    rappresent anomalies distributions before and after 1975. In the table are reported the p values by K.S. tests}
     \label{fig:2}
 \end{figure}
-In \ref*{fig:2} is shown that all datasets agree that the distributions of anomalies before and after 1975 are not consistent, 
-as every p-value is under 0.05.
+In figure \ref*{fig:2} is shown that all datasets agree that the distributions of anomalies before and after 1975 are not consistent, 
+as every p-value is under 0.05. 1975 has been chosen because plotted datasets seems to change trend in that year.
 
 
 \section*{Conclusions}
-Because of first set of K.S. test, (\ref*{fig:1}) is possibile to assert that different survey are misuring similar distributions,
+According to the first result, (fig \ref*{fig:1}) is possibile to assert that different surveys are misuring similar distributions,
 so can be concluded that all of that are misuring the same effect. Japan Met. data are the most different to the others, this could 
-appen because Japan Met. zero period was the most different 
+appen because Japan Met. zero period was the most different. 
 
-In second set of K.S. test, (\ref*{fig:2}) is shown that the anomalies in the last fifty years can't be considered as statistical fluctuation.
+In the second claim, (fig \ref*{fig:2}) is shown that the anomalies in the last fifty years can't be considered as statistical fluctuation.
 Because of that could be interesting to search for a trend in the last fifty years of data.
 
-
 \section*{Bibliography}
-Nasa:\\
-\href{https://data.giss.nasa.gov/gistemp/graphs_v4/graph_data/Global_Mean_Estimates_based_on_Land_and_Ocean_Data/graph.txt}{Dataset}\\
-Base: 1951-1980\\
 
-HadCRUT:\\
-\href{https://www.metoffice.gov.uk/hadobs/hadcrut5/data/current/download.html} {Dataset}\\
-Base: 1961-1990\\
 
-Ncdc Noaa\\
-\href{https://www.ncdc.noaa.gov/cag/global/time-series/globe/land_ocean/12/12/1880-2023/data.csv}{Dataset} \\
-Base: 1901-2000\\
-
-Japan metereological office\\
-\href{https://ds.data.jma.go.jp/tcc/tcc/products/gwp/temp/list/csv/year_wld.csv}{Dataset} \\
-Base: 1991-2020\\
-
-Berkeley\\
-\href{https://ds.data.jma.go.jp/tcc/tcc/products/gwp/temp/list/csv/year_wld.csv}{Dataset} \\
-Base: 1951-1980\\
-
+\begin{tabular}{ c c c c c }
+    Nasa    &   HadCRUT     &   Japan Metereological office     &   Ncdc Noaa   &   Berkeley \\
+    \href{https://data.giss.nasa.gov/gistemp/graphs_v4/graph_data/Global_Mean_Estimates_based_on_Land_and_Ocean_Data/graph.txt}{Nasa dataset} & 
+    \href{https://www.metoffice.gov.uk/hadobs/hadcrut5/data/current/download.html} {HadCRUT dataset} &
+    \href{https://ds.data.jma.go.jp/tcc/tcc/products/gwp/temp/list/csv/year_wld.csv}{Japan Met. dataset} &
+    \href{https://www.ncdc.noaa.gov/cag/global/time-series/globe/land_ocean/12/12/1880-2023/data.csv}{Noaa dataset} &
+    \href{https://ds.data.jma.go.jp/tcc/tcc/products/gwp/temp/list/csv/year_wld.csv}{Berkeley dataset} \\
+    Base: 1951-1980      &      Base: 1961-1990      & Base: 1991-2020      & Base: 1901-2000    & Base: 1951-1980
+\end{tabular}
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.6)  17 MAR 2023 16:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.6)  20 MAR 2023 16:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -432,55 +432,42 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 </home/francesco/Codici/Computazionale/dc0/Sovrapposizione_Osservatori.png, id=20, 888.31876pt x 611.28375pt>
 File: /home/francesco/Codici/Computazionale/dc0/Sovrapposizione_Osservatori.png Graphic file (type png)
 <use /home/francesco/Codici/Computazionale/dc0/Sovrapposizione_Osservatori.png>
-Package pdftex.def Info: /home/francesco/Codici/Computazionale/dc0/Sovrapposizione_Osservatori.png  used on input line 50.
+Package pdftex.def Info: /home/francesco/Codici/Computazionale/dc0/Sovrapposizione_Osservatori.png  used on input line 52.
 (pdftex.def)             Requested size: 386.95897pt x 266.27937pt.
-</home/francesco/Codici/Computazionale/dc0/Pre&Post.png, id=22, 1171.4967pt x 284.0211pt>
+</home/francesco/Codici/Computazionale/dc0/Pre&Post.png, id=22, 723.4227pt x 729.2043pt>
 File: /home/francesco/Codici/Computazionale/dc0/Pre&Post.png Graphic file (type png)
 <use /home/francesco/Codici/Computazionale/dc0/Pre&Post.png>
-Package pdftex.def Info: /home/francesco/Codici/Computazionale/dc0/Pre&Post.png  used on input line 64.
-(pdftex.def)             Requested size: 483.69687pt x 117.2685pt.
+Package pdftex.def Info: /home/francesco/Codici/Computazionale/dc0/Pre&Post.png  used on input line 66.
+(pdftex.def)             Requested size: 386.95897pt x 390.05925pt.
  [1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </home/francesco/Codici/Computazionale/dc0/Sovrapposizione_Osservatori.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 82--85
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--89
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--93
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--97
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--101
-
- []
-
-[2 </home/francesco/Codici/Computazionale/dc0/Pre&Post.png>] (./report.aux)
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 86.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 86.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 86.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [2 </home/francesco/Codici/Computazionale/dc0/Pre&Post.png>] (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: EAD74C08FE2510C01A14D04E2552814E;437.
  ) 
 Here is how much of TeX's memory you used:
- 11989 strings out of 476024
- 184954 string characters out of 5790025
- 1862388 words of memory out of 5000000
- 32267 multiletter control sequences out of 15000+600000
- 523686 words of font info for 48 fonts, out of 8000000 for 9000
+ 12051 strings out of 476024
+ 186028 string characters out of 5790025
+ 1863388 words of memory out of 5000000
+ 32304 multiletter control sequences out of 15000+600000
+ 529872 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,76p,302b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on report.pdf (2 pages, 108351 bytes).
+ 75i,6n,76p,302b,455s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on report.pdf (2 pages, 139533 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
+ 69 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
  9 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
