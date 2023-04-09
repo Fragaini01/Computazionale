@@ -1,4 +1,5 @@
-source = ftp://rock.geosociety.org/pub/reposit/2012/2012043.pdf
+source = https://gsapubs.figshare.com/articles/journal_contribution/Supplemental_material_Evolution_of_middle_to_Late_Cretaceous_oceans_A_55_m_y_record_of_Earth_s_temperature_and_carbon_cycle/12527942
+tbase = 14°C
 
 Anomaly(°C)	YB 2015
 0.24413333333333398	1665.0
