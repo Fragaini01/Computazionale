@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.6)  9 APR 2023 15:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.6)  12 APR 2023 08:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -62,8 +62,8 @@ LaTeX Info: Redefining \REV@mathfrak on input line 118.
 File: aps.rtx 2020/09/30 v4.0a (http://publish.aps.org/revtex4/ for documentation)
  (/usr/local/texlive/2022/texmf-dist/tex/latex/revtex4/rmp.rtx
 File: rmp.rtx 2020/09/30 v4.0a (http://publish.aps.org/revtex4/ for documentation)
-)) (/usr/local/texlive/2022/texmf-dist/tex/latex/revtex4/11pt.rtx
-File: 11pt.rtx 2020/09/30 v4.0a (http://publish.aps.org/revtex4/ for documentation)
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/revtex4/10pt.rtx
+File: 10pt.rtx 2020/09/30 v4.0a (http://publish.aps.org/revtex4/ for documentation)
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup4
@@ -404,15 +404,15 @@ Package hyperref Info: Link coloring OFF on input line 18.
 * \textheight=731.23584pt
 * \oddsidemargin=-15.36449pt
 * \evensidemargin=-15.36449pt
-* \topmargin=-52.36449pt
-* \headheight=12.0pt
-* \headsep=25.0pt
+* \topmargin=-56.36449pt
+* \headheight=25.0pt
+* \headsep=16.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=44.0pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=25.25pt plus 4.0pt minus 2.0pt
+* \marginparwidth=30.0pt
+* \marginparsep=6.0pt
+* \columnsep=18.0pt
+* \skip\footins=39.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -423,33 +423,56 @@ Package hyperref Info: Link coloring OFF on input line 18.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--44
- 
- []
-
-
 Class revtex4 Warning: Assuming \noaffiliation for Francesco Ragaini.
 
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 48.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 53.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
-) [1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./report.aux)
+)
+</home/francesco/Codici/Computazionale/Dc1/TweetAnno.png, id=24, 644.6484pt x 610.6815pt>
+File: /home/francesco/Codici/Computazionale/Dc1/TweetAnno.png Graphic file (type png)
+<use /home/francesco/Codici/Computazionale/Dc1/TweetAnno.png>
+Package pdftex.def Info: /home/francesco/Codici/Computazionale/Dc1/TweetAnno.png  used on input line 87.
+(pdftex.def)             Requested size: 338.58632pt x 320.75237pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+</home/francesco/Codici/Computazionale/Dc1/Politics.png, id=34, 735.7086pt x 730.6497pt>
+File: /home/francesco/Codici/Computazionale/Dc1/Politics.png Graphic file (type png)
+<use /home/francesco/Codici/Computazionale/Dc1/Politics.png>
+Package pdftex.def Info: /home/francesco/Codici/Computazionale/Dc1/Politics.png  used on input line 99.
+(pdftex.def)             Requested size: 338.58632pt x 336.25902pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+</home/francesco/Codici/Computazionale/Dc1/Scatter.png, id=35, 732.8178pt x 729.2043pt>
+File: /home/francesco/Codici/Computazionale/Dc1/Scatter.png Graphic file (type png)
+<use /home/francesco/Codici/Computazionale/Dc1/Scatter.png>
+Package pdftex.def Info: /home/francesco/Codici/Computazionale/Dc1/Scatter.png  used on input line 114.
+(pdftex.def)             Requested size: 338.58632pt x 336.91791pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2 </home/francesco/Codici/Computazionale/Dc1/TweetAnno.png>] [3 </home/francesco/Codici/Computazionale/Dc1/Politics.png>] [4 </home/francesco/Codici/Computazionale/Dc1/Scatter.png>] (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 805D77447599414D417B328514437556;460.
  ) 
 Here is how much of TeX's memory you used:
- 11945 strings out of 476024
- 183647 string characters out of 5790025
- 1860388 words of memory out of 5000000
- 32237 multiletter control sequences out of 15000+600000
- 519390 words of font info for 43 fonts, out of 8000000 for 9000
+ 12005 strings out of 476024
+ 185281 string characters out of 5790025
+ 1874388 words of memory out of 5000000
+ 32276 multiletter control sequences out of 15000+600000
+ 525012 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,76p,302b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on report.pdf (1 page, 31475 bytes).
+ 75i,7n,76p,302b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on report.pdf (4 pages, 212188 bytes).
 PDF statistics:
- 29 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
- 2 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 80 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

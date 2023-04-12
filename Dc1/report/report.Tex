@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt,rmp,superscriptaddress]{revtex4}
+\documentclass[a4paper,10pt,rmp,superscriptaddress]{revtex4}
 \usepackage{latexsym}
 \usepackage{helvet}
 \usepackage{times}
@@ -19,12 +19,10 @@
 \title{Global warming on Twitter: examining the relationship between social media discourse and political votes in Italy, 
 France and Germany}
 \author{Francesco Ragaini}
-
 \begin{abstract}
-
     In the last decade, climate change has gained significant attention, with numerous surveys and studies 
     published on the potential disasters associated with it.\\
-    This report was conducted to investigate whether there has been an increase in attention towards global warming in Italy, 
+    This report was conducted to investigate when there has been an increase in attention towards global warming in Italy, 
     France and Germany and whether this increased attention has influenced political voting patterns in the last two elections in 
     each state.\\
     Twitter was chosen as the primary source of data collection due to its popularity and the fact that tweet data is publicly available.\\ 
@@ -35,16 +33,105 @@ France and Germany}
     This procedure was repeated for the two most recent elections in each of the selected countries.\\
     Next, a correlation was analyzed between the percentage of tweets related to global warming and the political results for each party. 
     This test was conducted on both the total election results and the results of people under 35 years old.\\
-    The results showed that the number of tweets on active users increased in the selected period for each country (see Figure 1). 
-    Furthermore, the percentage of tweets on global warming increased between the first and second election in each country (see Figure 2).
+    The results showed that the number of tweets per active users increased in the selected period for each country (\ref*{fig:1}). 
+    Furthermore, the percentage of tweets on global warming increased between the first and second election in each country (\ref*{fig:2}).
     However, the correlation between the percentage of tweets and the total results did not increase in Italy, 
-    and was only greater than 0.8 in two cases (see Figure 3). 
+    and was only greater than 0.8 in two cases (\ref*{fig:3}).
     On the other hand, the correlation between the percentage of tweets and the results of people under 35 was higher in 
     each election than the correlation between the percentage of tweets and the total results.\\
-
+    This results suggests that there has been an increasing focus on global warming in recent years (in 2020 there was a small decrease, 
+    that could may be attributed to the COVID-19 pandemic, which drew attention away from other issues) 
+    and that political parties are also paying more attention to this issue. 
+    However, it is not necessarily the most important topic for voters when casting their votes. 
+    The correlation between the percentage of tweets related to global warming and the results among individuals under the age of 35 is 
+    greater than the correlation between the percentage of tweets related to global warming and the overall election results, 
+    except for one instance. 
+    This is an interesting finding as it suggests that younger individuals may be more concerned about global warming and prioritize it 
+    more in their voting decisions compared to the general population.
 \end{abstract}
 
-
 \maketitle
+\section*{Introduction}
+Climate change is an issue of global significance and is widely regarded as one of the most urgent and critical concerns of our time, 
+with profound implications for the environment, human health, and the well-being of our planet's inhabitants. 
+In advanced countries, the topic of climate change has generated significant public debate and spurred many important institutions 
+to take action towards reducing greenhouse gas emissions and mitigating its effects.
 
+The purpose of this report is to conduct a comprehensive analysis of the Twitter platform to determine whether there has been a surge in 
+public discourse concerning global warming. 
+Moreover, this report seeks to ascertain whether political parties have given greater attention to this issue in their tweets. 
+Finally, this report aims to investigate the potential correlation between political parties' focus on global warming and their election 
+outcomes, in order to determine if the public debate and the action taken from important istitutions had influenced people to 
+be more interested in this issue.
+It's also interest of this report to discuss if people before 35 age, that are more present on twitter, are even more interested in 
+gloabal themes or if they are more affected by twitter debate.
+
+\section*{Methods}
+Twitter is one of the most popular social media platforms worldwide, but it is primarily used in Europe and North America. 
+To make this analysis more realistic, it has been decided to focus only on Italy, France, and Germany. 
+These three countries have a high number of Twitter users and are part of the European Union, making their public debates similar. 
+Furthermore, the mean age of Twitter users is 24; therefore, this report will consider the political results of the total 
+population and those under 35 to determine if younger individuals are more interested in global warming and if they are more 
+involved in political debates on Twitter.
+
+One of the most difficult thing about this is to identify the world that are more used in climate change narrative, reading some article
+on italian newspapers (bibliography) it was exctrated a list of word that are the mose used in pulic debate.[Mettere lista parole.]
+In order to identify tweet on climate change, was counted tweet that contains one of this words or more.
+
+\section*{Result}
+As shown in figure \ref*{fig:1} in each of the considered countries tweet on global warming per active user is incrise in last considered
+period, only in 2020 all there was a small decrease.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{"/home/francesco/Codici/Computazionale/Dc1/TweetAnno.png"}
+    \caption[short]{\textbf{Tweet on global warming per active users increase in all selected countries.} In figure is shown that 
+    the number of tweet per active users increased in the selected period for each country, there is no data on active users for 2022. 
+    In 2020 each state registered a decrease in tweet per active users.}
+    \label{fig:1}
+\end{figure}
+Upon examining the second analysis (as depicted in Figure \ref*{fig:2}), 
+it can be observed that there has been an increase in the mean percentage of tweets concerning global warming that have been posted 
+by political parties in the period leading up to the election. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{"/home/francesco/Codici/Computazionale/Dc1/Politics.png"}
+    \caption[short]{\textbf{During the last election, political parties wrote a higher percentage of tweets related 
+    to global warming during their campaign.} Plots rappresent percentage of tweets related on global warming posted to the most 
+    voted parties during their campaign in Italy, Germany and France.}
+    \label{fig:2}
+\end{figure}
+Figure 3 illustrates that there is no clear pattern in the correlation between the percentage of tweets related to global warming 
+and the percentage of votes gained in the political election. 
+In Italy, the correlation appears to be decreasing, while in Germany and France, it appears to be increasing. 
+However, the total correlation with the election results exceeds 0.8 in only two elections (Italy 2017 and France 2022). 
+
+Additionally, in five out of six elections, the correlation with the results of the under 35 age group is greater than the correlation 
+with the total results. 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{"/home/francesco/Codici/Computazionale/Dc1/Scatter.png"}
+    \caption[short]{\textbf{Percentage of teweet on global warming is no longer correleted with elections result.} 
+    The graphs depict the relationship between the proportion of tweets mentioning global warming and the election results, 
+    for both the overall population and individuals under the age of 35.
+    In 5/6 election votes of under 35 are more correleted to tweet on global warming than total results.
+    The third column displays the trend of this correlation over the years.}
+    \label{fig:3}
+\end{figure}
+
+\section*{Conclusions}
+The findings of this study indicate that there has been a growing concern about global warming in the past few years, 
+with the exception of a small decrease in attention observed in 2020, which may be attributed to the COVID-19 pandemic, 
+diverting attention away from this issue.
+
+Furthermore, it appears that political parties have also begun to give greater 
+importance to the issue of global warming.
+ 
+However, the value of correletions suggest that the issue of global warming was not the most critical topic for voters when casting 
+their votes. 
+The correlation between the percentage of tweets related to global warming and the election results was stronger among individuals 
+under the age of 35 than in the overall population. It is also plausible that younger voters are more susceptible to the influence of tweets, 
+which could have a greater impact on their political views.
+\section*{Bibliography}
 \end{document}
