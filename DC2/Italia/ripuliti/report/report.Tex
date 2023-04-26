@@ -1,0 +1,165 @@
+\documentclass[a4paper,11pt,rmp,superscriptaddress]{report}
+\usepackage{latexsym}
+\usepackage{helvet}
+\usepackage{times}
+\usepackage[applemac]{inputenc}
+\usepackage{setspace}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{comment}
+\usepackage[margin=1.5cm]{geometry}
+\renewcommand{\baselinestretch}{1}
+\bibliographystyle{authordate1}
+\begin{document}
+\author{Francesco Ragaini}
+\title{Analyzing the relationship between house prices and key variables in Italy: Cross-Correlation and Granger Causality approach}
+\date{}
+\twocolumn[\nopagebreak
+\maketitle
+\begin{abstract}
+The housing market is a crucial aspect of any country, and understanding the factors that influence house prices is crucial for 
+policymakers and investors. The objective of this report is to determine if there is a significant cross-correlation and Granger 
+causality between a set of variables, namely interest rate, population, building permits, employed individuals, GDP, 
+and house price in Italy from 2000 to 2020. In order to ensure comparability between the variables, their mean values in 2010 
+were set to 100, thus placing them on the same scale.
+To begin, the time series data was tested for stationarity using the Dickey-Fuller test (DF test) to determine whether the series is 
+stationary. Becuase of negative results by DF test, the data was then split into three periods based on the trends in house prices 
+and detrended. Than Df test was again applied to each timeseries.After that a lagged cross correlation was computed between house prices 
+and each of the other variables.
+Next, VAR models were constructed for each time series to determine the optimal lag that minimizes the Akaike Information Criterion (AIC). 
+Granger causality tests were then conducted on each series against house prices using the optimal lag.
+DF tests reveals (fig:\ref*{fig:1}) that all time series variables, are stationary only after detrending, 
+expected for population timseries that was stationarity even before detrending. 
+The cross-correlation analysis (fig:\ref*{fig:2}) shows an increase when the variable precedes house prices, but this pattern is only 
+observed for interest rate.
+For the other variables, the cross-correlation is nearly symmetric with a maximum value at zero lag for employees, DCP, and building 
+permits, and a minimum value for population. The maximum values for cross-correlation are below 0.4, except for interest rates, which is 
+close to 0.6.
+The Granger causality test indicates (fig:\ref*{fig:3}) that only the interest rate variable has a p-value of less than 0.05 and 
+the optimal between interest rate and house price lag is also the that perform a hightest cross correlation.
+The result of DF tests to detrended data permits to refuse null hypothesis of non-stationarity 
+and enable cross-correlation and Granger causality tests.
+The cross-correlation analysis indicates a moderate correlation between interest rates and house prices,
+with a lead time of two quarters. For other variables, the test is inconclusive and suggests a serch for non-linear relationship.
+The Granger causality test shows a causal relationship between interest rates and house prices, but not for other variables.
+In summary, the report concludes that interest rates have a causal influence on house prices in Italy,
+while other variables may have a more complex relationship that requires further analysis.\\
+\end{abstract}
+]
+
+\section*{Introduction}
+The housing market plays a vital role in the economy of a country, as it impacts several sectors such as construction, 
+finance, and real estate. However, predicting changes in house prices is a complex task due to the interplay of various factors, 
+including economic conditions, population demographics, and housing policies. 
+In this context, this report intends to investigate whether specific variables can be considered causal factors that influence house 
+prices in Italy. By employing statistical tests such as the Dickey-Fuller test and the Granger causality test, the study examines 
+the relationship between key factors such as GDP, interest rates, new building permits, population, the number of workers, 
+and the trends in house prices over time. The findings of the analysis will shed light on the most significant factors driving changes 
+in house prices in Italy.
+
+\section*{Methods}
+The primary purpose of this report is to investigate whether a noteworthy cross-correlation and Granger 
+causality exists between a specified group of variables, namely interest rate, population, building permits, 
+employed individuals, GDP, and house price in Italy from 2000 to 2020. All of this series are online (\nameref{section:Bibliography}) 
+as a quarterly divided timeseries. To ensure a fair and meaningful comparison between the variables, 
+their mean values in 2010 were normalized to 100, effectively placing them on the same scale and reducing the impact of any potential 
+outliers. By doing so, the study aims to identify any significant patterns or relationships that could provide insights into the 
+determinants of house prices in Italy over the past two decades.
+
+The Dickey-Fuller test is a statistical test used to determine if a time series is stationary or not. 
+It is based on the null hypothesis that the time series  is non-stationary. By calculating a test statistic, the Dickey-Fuller test 
+compares the observed time series with an expected distribution to determine whether the null hypothesis can be rejected. 
+
+In order to detrend all time series, has been choose to divide the time series in three periods based on maximum and minimum 
+of house prices timseries.
+
+Cross-correlation is a statistical measure that examines the relationship between two time series by measuring their similarity or 
+dissimilarity over time. 
+It computes the correlation between the two series as a function of the time lag between them. To compute cross correlation timeseries
+must be stationary.
+
+Granger causality is a statistical concept that investigates whether past values of one variable can predict future values of another 
+variable. The idea is that if one variable Granger causes another, then the former provides useful information for forecasting the latter.
+The Granger causality test can be performed using a vector autoregression (VAR) model, 
+which is a time series model that includes lags of variable as predictors. The best number of lags can be 
+determined using the Akaike information criterion (AIC), which is a measure of the relative quality of a statistical model.
+Null hypothesis in Granger model is that one variable does not causes the other.
+In order to apply Grenger causality test all timeseries must be stationary.
+
+\section*{Results}
+Figure \ref*{fig:1} displays the time series before and after detrending. The table shows that after detrending, 
+all p-values for the DF test are below 0.05, enabling the use of cross-correlation and Granger causality tests. 
+Even before detrending, the population time series had a p-value below 0.05 in the DF test.
+
+\begin{figure}[h!]
+    \includegraphics[height = 14cm , width = 9cm]{"/home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/Linearizzati.png"}
+    \caption[short]{\textbf{Only after detrending all timeseries are stationary.} Figure shows timeseries before and after detrending, 
+    in table are reported p values by DF test: all of that are under 0.05 after detrending.}
+    \label{fig:1}
+\end{figure}
+
+Figure \ref*{fig:2} depicts the lagged cross-correlation between the variables and house prices. The final chart highlights the
+highest cross-correlation values for each variable. Only the interest rate shows a correlation greater than 0.5. Interestingly,
+for all variables except interest rate, the cross-correlation is nearly symmetric for positive and negative lagged time and
+reaches its maximum value at zero lag for employees, DCP, and building permits, while population has the lowest correlation.
+However, none of these correlations have an absolute value greater than 0.4.
+
+\begin{figure}[h!]
+    \includegraphics[height = 12cm , width = 9cm]{"/home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/CrossCorreletion.png"}
+    \caption[short]{\textbf{The lagged cross-correlation increases when only interest rate precedes house price, as it is the only 
+    variable that exceeds a value of 0.5.} The figure displays the cross-correlation over timelags, with the left side indicating 
+    when the variable precedes house price and the right side indicating when house price precedes the variable. 
+    The last plot reports the maximum cross-correlation for each variable, and only the cross-correlation between interest rate and 
+    house price exceeds a value of 0.5.}
+    \label{fig:2}
+\end{figure}
+
+Figure \ref*{fig:3} displays the AIC for the VAR model over the maximum lags for variables, and the p-values of the 
+Granger test for the best lags chosen as the one that minimizes AIC. Only the Granger's p-values for the VAR model based on 
+interest rate are under 0.05. All the other values are bigger than 0.5.
+
+\begin{figure}[h!]
+    \includegraphics[height = 12cm , width = 9cm]{"/home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/BestLag.png"}
+    \caption[short]{\textbf{Only for interest rate Granger p value for the best lag is under 0.05.} In plot is shown value of AIC over 
+    max lag for the VAR model, in the last plot the Granger p value for the best lag, choosed using the Aikakie Information Criterion.
+    Only rate interest has a p value under 0.05, while the others are bigger than 0.5.}
+    \label{fig:3}
+\end{figure}
+
+\section*{Conclusions}
+The DF tests for detrended series (fig:\ref*{fig:1}) allow us to reject the null hypothesis of non-stationarity, 
+thereby enabling the computation of cross-correlation and Granger causality tests. 
+
+The results (fig:\ref*{fig:2}) of the cross-correlation analysis indicate a moderately strong correlation between interest rates and house prices, 
+but only when interest rates lead house prices by two quarters. For the other variables, the test is inconclusive but suggests 
+that a linear cross-correlation may not be the most appropriate approach for analyzing their relationship with house prices.
+
+The Granger causality test produced results similar to the cross correlation analysis, (fig:\ref*{fig:3}) indicating a significant causal relationship 
+between interest rate and house prices with a lag of two quarters refusing the null hypothesis of non-causality. 
+However, the test did not reject the null hypothesis of non-causality for the other variables, 
+and the p-values suggest that a more complex model than a VAR model may be necessary to fully describe their 
+relationship with house prices.
+
+In summary, this report has found that the Granger causality 
+test shows that interest rates can be considered causal factors that influence house prices in Italy, with a lag of two trimesters. 
+On the other hand, the results of the test suggest that the relationship between house prices and other variables, 
+such as population, new building permits, GDP, and the number of employed individuals, 
+may be more complex and cannot be explained solely through linear causality. Therefore, a more comprehensive analysis that 
+incorporates additional factors and non-linear relationships may be necessary to better understand the dynamics of the Italian 
+housing market.
+\section*{Bibliography}
+\label{section:Bibliography}
+    \href{https://fred.stlouisfed.org/series/QITR628BIS}{House prices}
+    \href{https://infostat.bancaditalia.it/inquiry/home?spyglass/taxo:CUBESET=/PRINC_IND_00/PRINC_IND_01/PRINC_IND_02/PRINC_IND_02_02&ITEMSELEZ=BAM_MIR.M.1300010.MIR5411.9.950.1000.SBI17.EUR.110.212:true&OPEN=false/&ep:LC=IT&COMM=BANKITALIA&ENV=LIVE&CTX=DIFF&IDX=1&/view:CUBEIDS=BAM_MIR.M.1300010.MIR5411.9.950.1000.SBI17.EUR.110.212} {Interest Rate} 
+    \href{http://dati.istat.it/#}{Employees} 
+    \href{https://ourworldindata.org/grapher/population}{Population} \\
+    \href{http://dati.istat.it/#}{Building Permits} 
+    \href{http://dati.istat.it/Index.aspx?DataSetCode=DCCN_PILT}{DCP}
+\end{document}
