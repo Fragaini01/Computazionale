@@ -31,7 +31,7 @@ and house price in Italy from 2000 to 2020. In order to ensure comparability bet
 were set to 100, thus placing them on the same scale.
 To begin, the time series data was tested for stationarity using the Dickey-Fuller test (DF test) to determine whether the series is 
 stationary. Becuase of negative results by DF test, the data was then split into three periods based on the trends in house prices 
-and detrended. Than Df test was again applied to each timeseries.After that a lagged cross correlation was computed between house prices 
+and detrended. Than DF test was again applied to each timeseries.After that a lagged cross correlation was computed between house prices 
 and each of the other variables.
 Next, VAR models were constructed for each time series to determine the optimal lag that minimizes the Akaike Information Criterion (AIC). 
 Granger causality tests were then conducted on each series against house prices using the optimal lag.
@@ -43,7 +43,7 @@ For the other variables, the cross-correlation is nearly symmetric with a maximu
 permits, and a minimum value for population. The maximum values for cross-correlation are below 0.4, except for interest rates, which is 
 close to 0.6.
 The Granger causality test indicates (fig:\ref*{fig:3}) that only the interest rate variable has a p-value of less than 0.05 and 
-the optimal between interest rate and house price lag is also the that perform a hightest cross correlation.
+the optimal between interest rate and house price lag is also the one that perform a hightest cross correlation.
 The result of DF tests to detrended data permits to refuse null hypothesis of non-stationarity 
 and enable cross-correlation and Granger causality tests.
 The cross-correlation analysis indicates a moderate correlation between interest rates and house prices,
@@ -74,12 +74,13 @@ their mean values in 2010 were normalized to 100, effectively placing them on th
 outliers. By doing so, the study aims to identify any significant patterns or relationships that could provide insights into the 
 determinants of house prices in Italy over the past two decades.
 
+In order to detrend all time series, has been choose to divide the time series in three periods based on maximum and minimum 
+of house prices timseries.
+
 The Dickey-Fuller test is a statistical test used to determine if a time series is stationary or not. 
 It is based on the null hypothesis that the time series  is non-stationary. By calculating a test statistic, the Dickey-Fuller test 
 compares the observed time series with an expected distribution to determine whether the null hypothesis can be rejected. 
 
-In order to detrend all time series, has been choose to divide the time series in three periods based on maximum and minimum 
-of house prices timseries.
 
 Cross-correlation is a statistical measure that examines the relationship between two time series by measuring their similarity or 
 dissimilarity over time. 
@@ -114,11 +115,11 @@ However, none of these correlations have an absolute value greater than 0.4.
 
 \begin{figure}[h!]
     \includegraphics[height = 12cm , width = 9cm]{"/home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/CrossCorreletion.png"}
-    \caption[short]{\textbf{The lagged cross-correlation increases when only interest rate precedes house price, as it is the only 
-    variable that exceeds a value of 0.5.} The figure displays the cross-correlation over timelags, with the left side indicating 
+    \caption[short]{\textbf{The lagged cross-correlation increases only when interest rate precedes house price, as it is the only 
+    variable that correletion with house prices exceeds a value of 0.5.} The figure displays the cross-correlation over timelags, with the left side indicating 
     when the variable precedes house price and the right side indicating when house price precedes the variable. 
     The last plot reports the maximum cross-correlation for each variable, and only the cross-correlation between interest rate and 
-    house price exceeds a value of 0.5.}
+    house price exceeds value of 0.5, while the other are smaller than 0.4.}
     \label{fig:2}
 \end{figure}
 
@@ -135,7 +136,7 @@ interest rate are under 0.05. All the other values are bigger than 0.5.
 \end{figure}
 
 \section*{Conclusions}
-The DF tests for detrended series (fig:\ref*{fig:1}) allow us to reject the null hypothesis of non-stationarity, 
+The DF tests for detrended series (fig:\ref*{fig:1}) allow to reject the null hypothesis of non-stationarity, 
 thereby enabling the computation of cross-correlation and Granger causality tests. 
 
 The results (fig:\ref*{fig:2}) of the cross-correlation analysis indicate a moderately strong correlation between interest rates and house prices, 
@@ -145,12 +146,11 @@ that a linear cross-correlation may not be the most appropriate approach for ana
 The Granger causality test produced results similar to the cross correlation analysis, (fig:\ref*{fig:3}) indicating a significant causal relationship 
 between interest rate and house prices with a lag of two quarters refusing the null hypothesis of non-causality. 
 However, the test did not reject the null hypothesis of non-causality for the other variables, 
-and the p-values suggest that a more complex model than a VAR model may be necessary to fully describe their 
+and the p-values suggest that a more complex model than a VAR may be necessary to fully describe their 
 relationship with house prices.
 
-In summary, this report has found that the Granger causality 
-test shows that interest rates can be considered causal factors that influence house prices in Italy, with a lag of two trimesters. 
-On the other hand, the results of the test suggest that the relationship between house prices and other variables, 
+In summary, this report has found that interest rates can be considered causal factors that influence house prices in Italy, with a lag of two quarters. 
+On the other hand, the results of the tests suggest that the relationship between house prices and other variables, 
 such as population, new building permits, GDP, and the number of employed individuals, 
 may be more complex and cannot be explained solely through linear causality. Therefore, a more comprehensive analysis that 
 incorporates additional factors and non-linear relationships may be necessary to better understand the dynamics of the Italian 

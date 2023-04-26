@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.6)  26 APR 2023 13:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.6)  26 APR 2023 13:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -497,25 +497,25 @@ Overfull \hbox (2.98436pt too wide) in paragraph at lines 69--76
 </home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/Linearizzati.png, id=13, 562.2606pt x 664.1613pt>
 File: /home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/Linearizzati.png Graphic file (type png)
 <use /home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/Linearizzati.png>
-Package pdftex.def Info: /home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/Linearizzati.png  used on input line 103.
+Package pdftex.def Info: /home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/Linearizzati.png  used on input line 104.
 (pdftex.def)             Requested size: 256.07777pt x 398.3377pt.
 
-Overfull \hbox (5.00296pt too wide) in paragraph at lines 103--105
+Overfull \hbox (5.00296pt too wide) in paragraph at lines 104--106
 [][] 
  []
 
 
-Overfull \hbox (3.34526pt too wide) in paragraph at lines 109--114
+Overfull \hbox (3.34526pt too wide) in paragraph at lines 110--115
 \OT1/ptm/m/n/10.95 the high-est cross-correlation val-ues for each vari-able. Only
  []
 
 </home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/CrossCorreletion.png, id=15, 899.7615pt x 602.0091pt>
 File: /home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/CrossCorreletion.png Graphic file (type png)
 <use /home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/CrossCorreletion.png>
-Package pdftex.def Info: /home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/CrossCorreletion.png  used on input line 116.
+Package pdftex.def Info: /home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/CrossCorreletion.png  used on input line 117.
 (pdftex.def)             Requested size: 256.064pt x 341.43098pt.
 
-Overfull \hbox (4.98918pt too wide) in paragraph at lines 116--121
+Overfull \hbox (4.98918pt too wide) in paragraph at lines 117--122
 [][] 
  []
 
@@ -525,17 +525,22 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 </home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/BestLag.png, id=16, 912.7701pt x 602.0091pt>
 File: /home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/BestLag.png Graphic file (type png)
 <use /home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/BestLag.png>
-Package pdftex.def Info: /home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/BestLag.png  used on input line 130.
+Package pdftex.def Info: /home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/BestLag.png  used on input line 131.
 (pdftex.def)             Requested size: 256.07529pt x 341.43098pt.
 
-Overfull \hbox (5.00047pt too wide) in paragraph at lines 130--133
+Overfull \hbox (5.00047pt too wide) in paragraph at lines 131--134
 [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2 </home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/Linearizzati.png>] [3 </home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/CrossCorreletion.png> </home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/BestLag.png>] (./report.aux)
+[2 </home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/Linearizzati.png>]
+Overfull \hbox (3.84906pt too wide) in paragraph at lines 152--158
+\OT1/ptm/m/n/10.95 can be con-sid-ered causal fac-tors that in-flu-ence house prices
+ []
+
+[3 </home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/CrossCorreletion.png> </home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/BestLag.png>] (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
@@ -548,7 +553,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,8n,76p,447b,444s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on report.pdf (3 pages, 269604 bytes).
+Output written on report.pdf (3 pages, 269646 bytes).
 PDF statistics:
  56 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream

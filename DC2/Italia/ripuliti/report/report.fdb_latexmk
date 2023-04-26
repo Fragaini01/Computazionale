@@ -1,9 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1682509338 "/home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/report/report.Tex" "report.pdf" "report" 1682509340 0
+["pdflatex"] 1682510179 "/home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/report/report.Tex" "report.pdf" "report" 1682510181 0
   "/home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/BestLag.png" 1682492377 98397 ded217bacfcaf1e86b0559346062bab6 ""
   "/home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/CrossCorreletion.png" 1682492297 82590 1d43855c6c8ca9616340c28b21c0bb5a ""
   "/home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/Linearizzati.png" 1682445431 125343 a53e286e73f1a2e6b2915b22d789a6e8 ""
-  "/home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/report/report.Tex" 1682509337 12292 be4e66ec68447aaf456bb7ca4d1aee7d ""
+  "/home/francesco/Codici/Computazionale/DC2/Italia/ripuliti/report/report.Tex" 1682510177 12313 0f3fc2a9cb713814356ea8f83e6fff77 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -106,9 +106,9 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1678112382 4623355 58034c3eb7ddf7eacc726a83d01e26d2 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1678112421 7880051 06be4b34a251cc5707c41f9d91558de0 ""
   "/usr/local/texlive/2022/texmf.cnf" 1678112373 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "report.Tex" 1682509337 12292 be4e66ec68447aaf456bb7ca4d1aee7d ""
-  "report.aux" 1682509340 1136 3e4f8a50467b136edbd59d45cd9a1a61 "pdflatex"
-  "report.out" 1682509339 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "report.Tex" 1682510177 12313 0f3fc2a9cb713814356ea8f83e6fff77 ""
+  "report.aux" 1682510181 1136 3e4f8a50467b136edbd59d45cd9a1a61 "pdflatex"
+  "report.out" 1682510180 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "report.aux"
   "report.log"
